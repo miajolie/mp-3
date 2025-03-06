@@ -31,7 +31,7 @@ const NavItem = styled.li`
     padding: 2vh 0;
     margin: 5vh auto;
 `;
-
+//add hover featureeee
 
 export default function Nav(){
     return(

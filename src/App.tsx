@@ -7,22 +7,34 @@ import Skills from "./components/Skills"
 import WorkExperience from "./components/WorkExperience";
 import ActivitiesHobbies from "./components/ActivitiesHobbies";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import styled from "styled-components";
 
+const Container = styled.div`
+
+`;
+
+const PageWrapper = styled.div`
+
+`;
 
 function Root() {
   return (
     <div>
-      <Header/>
-      <Nav/>
-      <Routes>
-        <Route path= {`/`} element = {<Home/>}/>
-        <Route path= {`/Education`} element = {<Education/>}/>
-        <Route path= {`/Skills`} element = {<Skills/>}/>
-        <Route path= {`/WorkExperience`} element = {<WorkExperience/>}/>
-        <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
-        <Route path= {`/Projects`} element = {<Projects/>}/>
-      </Routes>
+      <PageWrapper>
+        <Header/>
+          <Container>
+            <Nav/>
+          <Routes>
+            <Route path= {`/`} element = {<Home/>}/>
+            <Route path= {`/Education`} element = {<Education/>}/>
+            <Route path= {`/Skills`} element = {<Skills/>}/>
+            <Route path= {`/WorkExperience`} element = {<WorkExperience/>}/>
+            <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
+            <Route path= {`/Projects`} element = {<Projects/>}/>
+          </Routes>
+          </Container>
+        </PageWrapper>
       <Footer/>
     </div>
   );

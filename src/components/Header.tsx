@@ -2,10 +2,11 @@
 import {styled} from "styled-components";
 
 const StyledHeader = styled.header`
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: #ffd3b5;
+    color: #ff8c94;
 `;
 
 //change style of title later
