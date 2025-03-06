@@ -7,6 +7,7 @@ import Skills from "./components/Skills"
 import WorkExperience from "./components/WorkExperience";
 import ActivitiesHobbies from "./components/ActivitiesHobbies";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer"
 
 
 function Root() {
@@ -22,6 +23,7 @@ function Root() {
         <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
         <Route path= {`/Projects`} element = {<Projects/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
