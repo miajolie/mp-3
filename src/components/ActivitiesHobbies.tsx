@@ -6,18 +6,29 @@ import Clown from "../assets/FinalPortfolio /clown 1 no eyebrows (10).jpg";
 import Kake from "../assets/FinalPortfolio /Kakegurui (6).jpg";
 import Candy from "../assets/FinalPortfolio /Candy Land (15).jpg";
 import Butter from "../assets/FinalPortfolio /Yellow Saturated 4(3).jpg";
-import Sun from "../assets/FinalPortfolio /sunflower com 1.jpg"
 import Climb from "../assets/climbing.jpeg";
-import StudioPic from "../assets/photo.jpg";
+import StudioPic from "../assets/StudioPic.jpg";
 
 const Portfolio = styled.div`
+    width: auto;
+    margin: 1vh 1vw;
+    margin: 2vh auto; 
+    display:flex;
 
+    flex-wrap: wrap;
 `;
-const Soccer = styled.div`
-
+const SoccerDiv = styled.div`
+width: 40%;
+    margin: auto;
 `;
 const RockClimbing = styled.div`
-
+width: 40%;
+    margin: auto;
+`;
+const StudioPicture = styled.img`
+    max-width: 100%;
+    border: 4px solid #b6cdbd;
+    align-items: center;
 `;
 
 const Title = styled.h2`
@@ -29,18 +40,30 @@ font-family: Times;
 `;
 
 const HobText = styled.div`
-
+    text-align: center;
 `;
 const Img = styled.img`
+    border: 4px solid #b6cdbd;
+    overflow:hidden;
+    flex:1 1 calc(33.333% - 1rem);
+    display:block;
+    object-fit: contain;
+    max-width: 100%;
 
-`
+`;
 const Playing = styled.img`
+max-width: 100%;
+    border: 4px solid #b6cdbd;
+    align-items: center;
 `;
 const Climbing = styled.img`
-`;
-const StudioPic = styled.img`
+    max-width: 100%;
+    border: 4px solid #b6cdbd;
+    align-items: center;
 `;
 
+const Photography = styled.div`
+`;
 export default function ActivitiesHobbies(){
     return (
         <>
@@ -48,31 +71,31 @@ export default function ActivitiesHobbies(){
                 <Title>Women's Club Soccer Team | Boston Univeristy / University of California, Irvine </Title>
                 <SubTitle>Aug, 2021 - Present</SubTitle>
             </HobText>
-            <Soccer>
+            <SoccerDiv>
                 <Playing src={Soccer} alt= "me playing soccer"/> 
-            </Soccer>
+            </SoccerDiv>
             <HobText>
-                <h3>Rock Climbing Club | Boston Univeristy</h3>
-                <h5>Aug, 2022 - Present</h5>
+                <Title>Rock Climbing Club | Boston Univeristy</Title>
+                <SubTitle>Aug, 2022 - Present</SubTitle>
             </HobText>
             <RockClimbing>
                 <Climbing src={Climb} alt="Life's a Climb!"/>
             </RockClimbing>
             <HobText>
-                <h3>Studio Photography | Passion Projects, 30+ completed</h3>
-                <h5>Some of My Portfolio!</h5>
+                <Title>Studio Photography | Passion Projects, 30+ completed</Title>
+                <SubTitle>Some of My Portfolio!</SubTitle>
             </HobText>
             <Photography>
-                <StudioPic src={StudioPic} alt="Me and my friend!"/>
+                <StudioPicture src={StudioPic} alt="Me and my friend!"/>
             </Photography>
                 <Portfolio>
-                    <Img src={Bubble} alt="bubbles!">
-                    <Img src={Fruit} alt="fruits!">
-                    <Img src={Clown} alt="IT!">
-                    <Img src={Kake} alt="wrapped!">
-                    <Img src={Candy} alt="candy land!">
-                    <Img src={Butter} alt="butterfly eyes!">
-                    <Img src={Sun} alt="dark flowers!">
+                    <Img src={Bubble} alt="bubbles!"/>
+                    <Img src={Fruit} alt="fruits!"/>
+                    <Img src={Clown} alt="IT!"/>
+                    <Img src={Kake} alt="wrapped!"/>
+                    <Img src={Candy} alt="candy land!"/>
+                    <Img src={Butter} alt="butterfly eyes!"/>
+                    
                 </Portfolio>
         </>
     );
