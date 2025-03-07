@@ -1,7 +1,7 @@
 import {styled} from 'styled-components';
 import TA from "../assets/TA.jpg";
-import Ryder from "../assets/ryder.jpeg";
-import Blue from "../assets/blue.png";
+import Ryder from "../assets/Ryder.jpeg";
+import Blue from "../assets/Blue.png";
 
 const BlueImage = styled.div`
     display: flex;

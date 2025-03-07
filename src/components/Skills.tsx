@@ -1,5 +1,5 @@
 import {styled} from 'styled-components';
-import GIF from "../assets/peter.gif";
+import GIF from "../assets/Peter.gif";
 
 
 const MainSkills = styled.div`
