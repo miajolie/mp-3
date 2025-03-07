@@ -8,13 +8,14 @@ margin: 1rem;
 
 const StyledNav = styled.nav`
     width: 30%;
+    background-color: #ffd3b5;
 `;
 
 const NavList = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #ffd3b5;
+    
     font-size: calc(2px + 2vw);
     text-align: center;
     list-style: none;
@@ -23,7 +24,6 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
     font-size: calc(1px + 2vw);
-
     width: 90%;
     background-color:#ffaaa6;
     border: 2px solid #dcedc2 ;
@@ -32,6 +32,7 @@ const NavItem = styled.li`
     margin: 5vh auto;
 `;
 //add hover featureeee
+//media 
 
 export default function Nav(){
     return(

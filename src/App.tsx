@@ -11,11 +11,34 @@ import Footer from "./components/Footer";
 import styled from "styled-components";
 
 const Container = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #dcedc2;
 
+    min-height: 100vh;
+
+    @media (max-width: 900px){
+      flex-direction: column;
+    }
 `;
 
 const PageWrapper = styled.div`
+    width: 80vw;
+    margin: auto;
 
+    @media (max-width: 900px){
+      width: 100%;
+    }
+`;
+
+const Main = styled.div`
+  display: flex;
+        flex-direction: column;
+        width:100%;
+        /* height: 100vh; */
+        background-color: #dcedc2;
 `;
 
 function Root() {
@@ -25,17 +48,19 @@ function Root() {
         <Header/>
           <Container>
             <Nav/>
-          <Routes>
-            <Route path= {`/`} element = {<Home/>}/>
-            <Route path= {`/Education`} element = {<Education/>}/>
-            <Route path= {`/Skills`} element = {<Skills/>}/>
-            <Route path= {`/WorkExperience`} element = {<WorkExperience/>}/>
-            <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
-            <Route path= {`/Projects`} element = {<Projects/>}/>
-          </Routes>
+            <Main>
+              <Routes>
+                <Route path= {`/`} element = {<Home/>}/>
+                <Route path= {`/Education`} element = {<Education/>}/>
+                <Route path= {`/Skills`} element = {<Skills/>}/>
+                <Route path= {`/WorkExperience`} element = {<WorkExperience/>}/>
+                <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
+                <Route path= {`/Projects`} element = {<Projects/>}/>
+              </Routes>
+            </Main>
           </Container>
-        </PageWrapper>
-      <Footer/>
+        <Footer/> 
+      </PageWrapper>
     </div>
   );
 }
