@@ -62,7 +62,7 @@ export default function PurtyCalc(){
     const b = Number(second);
         if (b === 0) {
 
-            // setResult(quotient.toString());
+
             setColor("red");
             return;
         }
@@ -120,8 +120,8 @@ export default function PurtyCalc(){
         </CalcWrapper>
         <Decks>
             <Title>Client Deck Work</Title>
-        <Img src={"public/lego.jpg"} alt="lego presentation"/>
-        <Img src = {"public/diamonds.jpg"} alt = "diamond presentation"/>
+        <Img src={"/lego.jpg"} alt="lego presentation"/>
+        <Img src = {"/diamonds.jpg"} alt = "diamond presentation"/>
 
         </Decks>
         
