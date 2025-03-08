@@ -61,6 +61,7 @@ function Root() {
                 <Route path= {`/WorkExperience`} element = {<WorkExperience/>}/>
                 <Route path= {`/ActivitiesHobbies`} element = {<ActivitiesHobbies/>}/>
                 <Route path= {`/Projects`} element = {<Projects/>}/>
+                <Route path={`/credits`} element={<h1>Placeholder</h1>} />
               </Routes>
             </Main>
           </Container>
