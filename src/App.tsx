@@ -21,6 +21,7 @@ const Container = styled.div`
 
     @media (max-width: 900px){
       flex-direction: column;
+      // width: 100%;
     }
 `;
 
@@ -28,22 +29,26 @@ const PageWrapper = styled.div`
     width: 80vw;
     margin: auto;
 
-    @media (max-width: 900px){
+    // @media (max-width: 900px){
+    //   width: 100%;
+    // }
+`;
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  width:70%;
+  /* height: 100vh; */
+  background-color: #dcedc2;
+
+   @media (max-width: 900px){
       width: 100%;
     }
 `;
 
-const Main = styled.div`
-  display: flex;
-        flex-direction: column;
-        width:100%;
-        /* height: 100vh; */
-        background-color: #dcedc2;
-`;
-
 function Root() {
   return (
-    <div>
+    <>
       <PageWrapper>
         <Header/>
           <Container>
@@ -61,7 +66,7 @@ function Root() {
           </Container>
         <Footer/> 
       </PageWrapper>
-    </div>
+    </>
   );
 }
 

@@ -1,12 +1,12 @@
 import {styled} from 'styled-components';
-import GIF from "../assets/Peter.gif";
+
 
 
 const MainSkills = styled.div`
 `;
 
 const Peter = styled.div`
-         
+    margin-top: 2vh;
 `;
 const PeterImg = styled. img`
     width: 60%;      
@@ -14,6 +14,7 @@ const PeterImg = styled. img`
     margin: 0 auto;
     margin-bottom: 2vh auto;
     display: block;
+    
 
     @media screen and (max-width: 900px) {
         width: 90%;      
@@ -38,7 +39,7 @@ const Box = styled.div`
         border-radius: 4vw;
         padding: 5.5%;
         text-align: center; 
-        width: 100%;
+       
         overflow: hidden;
         font-size: calc(2px + 2vw);
     }
@@ -51,13 +52,16 @@ const SkillCategories = styled.div`
     width: 80%;                           
     max-width: 800vw; 
     padding: 5.5%;
+    margin: 0 auto;
+
     
 
     @media screen and (max-width: 900px) {
         grid-template-columns: 1fr; 
         width: 95%;
         overflow: hidden;
-    }
+        padding: 2.5%;
+        }
 
 `;
 
@@ -66,7 +70,7 @@ export default function Skills(){
     return (
         <MainSkills>
             <Peter>
-                <PeterImg src = {GIF} alt = "Peter Dancing"/>
+                <PeterImg src = {"/Peter.gif"} alt = "Peter Dancing"/>
             </Peter>
                 <SkillCategories>
                     <Box>

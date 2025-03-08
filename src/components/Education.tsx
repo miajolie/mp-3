@@ -1,6 +1,5 @@
 import {styled} from "styled-components";
-import BU from "../assets/BU.png";
-import UCI from "../assets/UCI.png";
+
 
 const MainEducation = styled.div`
 text-align: center; 
@@ -73,7 +72,7 @@ export default function Education(){
         <MainEducation>
             <Edu>
                 <UCIPic>
-                    <UCIImg src= {UCI} alt="UCI Mascot" />
+                    <UCIImg src= {"/UCI.png"} alt="UCI Mascot" />
                 </UCIPic>
                 <UText>
                     <p>
@@ -84,7 +83,7 @@ export default function Education(){
             </Edu>
             <Edu>
                 <BUPic>
-                    <BUImg src= {BU} alt="BU Mascot" />
+                    <BUImg src= {"/BU.png"} alt="BU Mascot" />
                 </BUPic>
                 <BText>
                     <p>

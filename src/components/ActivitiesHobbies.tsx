@@ -1,13 +1,5 @@
 import {styled} from 'styled-components';
-import Bubble from "../assets/FinalPortfolio /BubbleQueen.jpg";
-import Soccer from "../assets/Soccer.jpg";
-import Fruit from "../assets/FinalPortfolio /Fruits Basket 1 .jpg";
-import Clown from "../assets/FinalPortfolio /clown 1 no eyebrows (10).jpg";
-import Kake from "../assets/FinalPortfolio /Kakegurui (6).jpg";
-import Candy from "../assets/FinalPortfolio /Candy Land (15).jpg";
-import Butter from "../assets/FinalPortfolio /Yellow Saturated 4(3).jpg";
-import Climb from "../assets/climbing.jpeg";
-import StudioPic from "../assets/StudioPic.jpg";
+
 
 const Portfolio = styled.div`
     width: auto;
@@ -72,29 +64,29 @@ export default function ActivitiesHobbies(){
                 <SubTitle>Aug, 2021 - Present</SubTitle>
             </HobText>
             <SoccerDiv>
-                <Playing src={Soccer} alt= "me playing soccer"/> 
+                <Playing src={"/Soccer.jpg"} alt= "me playing soccer"/> 
             </SoccerDiv>
             <HobText>
                 <Title>Rock Climbing Club | Boston Univeristy</Title>
                 <SubTitle>Aug, 2022 - Present</SubTitle>
             </HobText>
             <RockClimbing>
-                <Climbing src={Climb} alt="Life's a Climb!"/>
+                <Climbing src={"/climbing.jpeg"} alt="Life's a Climb!"/>
             </RockClimbing>
             <HobText>
                 <Title>Studio Photography | Passion Projects, 30+ completed</Title>
                 <SubTitle>Some of My Portfolio!</SubTitle>
             </HobText>
             <Photography>
-                <StudioPicture src={StudioPic} alt="Me and my friend!"/>
+                <StudioPicture src={"/StudioPic.jpg"} alt="Me and my friend!"/>
             </Photography>
                 <Portfolio>
-                    <Img src={Bubble} alt="bubbles!"/>
-                    <Img src={Fruit} alt="fruits!"/>
-                    <Img src={Clown} alt="IT!"/>
-                    <Img src={Kake} alt="wrapped!"/>
-                    <Img src={Candy} alt="candy land!"/>
-                    <Img src={Butter} alt="butterfly eyes!"/>
+                    <Img src={"/FinalPortfolio /BubbleQueen.jpg"} alt="bubbles!"/>
+                    <Img src={"/FinalPortfolio /Fruits Basket 1 .jpg"} alt="fruits!"/>
+                    <Img src={"/FinalPortfolio /clown 1 no eyebrows (10).jpg"} alt="IT!"/>
+                    <Img src={"/FinalPortfolio /Kakegurui (6).jpg"} alt="wrapped!"/>
+                    <Img src={"/FinalPortfolio /Candy Land (15).jpg"} alt="candy land!"/>
+                    <Img src={"/FinalPortfolio /Yellow Saturated 4(3).jpg"} alt="butterfly eyes!"/>
                     
                 </Portfolio>
         </>

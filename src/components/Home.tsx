@@ -1,19 +1,31 @@
 import {styled} from 'styled-components';
-import pic from "../assets/ProfilePic.jpeg";
 
-const HomeContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    background-color: #dcedc2;
-`;
-//done
+
+// const HomeContainer = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     width:100%;
+//     background-color: #dcedc2;
+
+//     @media screen and (max-width: 900px) {
+//         max-width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+// `;
+//main #
 
 const Title = styled.h2`
     margin: 2vw 0;
     text-align: center;
     font-size: calc(2px + 2vw);
     color: #ff8c94;
+
+    @media screen and (max-width: 900px) {
+        text-align: center;
+        color: #ff8c94;
+    }   
 `;
 //DONE
 
@@ -22,6 +34,12 @@ const IntroSection = styled.div`
     width: 50%;
     margin: 1vh 1vw;
     font-size: calc(1px + 1.5vw);
+
+    @media screen and (max-width: 900px){
+        align-self: center;
+        margin: 0;
+        font-size: calc(2px + 3vw);
+        width: 100%;
 
 `;
 
@@ -39,27 +57,45 @@ const WelcomeMessage = styled.p`
     align-self: center;
     margin-left : 2.5%;
     margin-right : 2.5%;
+
+    @media screen and (max-width: 900px) {
+        margin: 2% 2%;
+        font-size: calc(2px + 3vw);
+
+    }
 `;
 const Main = styled.div`
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: row;
     padding: 2vh 2vw;
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        // height: 100vh;
+        background-color: #dcedc2;
+
+    }
 `;
 const MainImage = styled.div`
     width: 40%;
     margin: 1vh 1vw;
+
+    @media screen and (max-width: 900px) {
+        margin: 1vh auto;
+        }
 `;
 
 
 
 export default function Home() {
   return (
-    <HomeContainer>
+<>
       <Title>Home</Title>
         <Main>
             <MainImage>
-                <ProfileImg src= {pic} alt="Mia Jolie Batista" />
+                <ProfileImg src= {"/ProfilePic.jpeg"} alt="Mia Jolie Batista" />
             </MainImage>
                 <IntroSection>
                     <p>
@@ -81,7 +117,7 @@ export default function Home() {
                 any <strong>Work Experience</strong>; and maybe even some of my art!
                 </p>
             </WelcomeMessage>
-    </HomeContainer>
+    </>
   );
 }
 

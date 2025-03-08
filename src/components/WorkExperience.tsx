@@ -1,7 +1,5 @@
 import {styled} from 'styled-components';
-import TA from "../assets/TA.jpg";
-import Ryder from "../assets/Ryder.jpeg";
-import Blue from "../assets/Blue.png";
+
 
 const BlueImage = styled.div`
     display: flex;
@@ -54,7 +52,7 @@ export default function WorkExperience(){
     return (
         <>
         <TAImage>
-            <TAPic src= {TA} alt= "Picture of Me being a TA"/>
+            <TAPic src= {"/TA.jpg"} alt= "Picture of Me being a TA"/>
         </TAImage>
                 <Title>Boston University Computer Science Department | Boston, MA </Title>
                 <SubTitle>Aug. 2023 - Present</SubTitle>
@@ -77,7 +75,7 @@ export default function WorkExperience(){
                         </WorkText>
                 </Work>
                     <RyderImage>
-                        <RyderPic src= {Ryder} alt= "Picture of Me at Ryder HQ"/>
+                        <RyderPic src= {"/Ryder.jpeg"} alt= "Picture of Me at Ryder HQ"/>
                     </RyderImage>
                         <Title>Ryder System, Inc | Miami, FL </Title>
                         <SubTitle>June 2024 - July 2024</SubTitle>
@@ -101,7 +99,7 @@ export default function WorkExperience(){
                     </WorkText>
                 </Work>
                 <BlueImage>
-                    <BluePic src= {Blue} alt= "BMG"/>
+                    <BluePic src= {"/Blue.png"} alt= "BMG"/>
                 </BlueImage>
                     <Title>Blue Man Group | Boston, MA </Title>
                     <SubTitle>Aug. 2023 - Dec 2023</SubTitle>
