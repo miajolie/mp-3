@@ -6,7 +6,6 @@ const Portfolio = styled.div`
     margin: 1vh 1vw;
     margin: 2vh auto; 
     display:flex;
-
     flex-wrap: wrap;
 `;
 const SoccerDiv = styled.div`
@@ -18,9 +17,10 @@ width: 40%;
     margin: auto;
 `;
 const StudioPicture = styled.img`
-    max-width: 100%;
+    max-width: 90%;
     border: 4px solid #b6cdbd;
     align-items: center;
+    margin-left: 5%;
 `;
 
 const Title = styled.h2`

@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledLink = styled(Link)`
 padding: 0.25rem;
 margin: 0;
+text-decoration: none;
 
 
 `;
