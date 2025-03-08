@@ -30,10 +30,10 @@ const Ans = styled.div`
 `;
 
 export default function PurtyCalc(){
-    const [first, setFirst] = useState("");
-    const [second, setSecond] = useState("");
-    const [result, setResult] = useState("");
-    const [color, setColor] = useState("black");
+    const [first, setFirst] = useState<string>("");
+    const [second, setSecond] = useState<string>("");
+    const [result, setResult] = useState<string>("");
+    const [color, setColor] = useState<string>("black");
 
     function Addition() {
         const a = Number(first);
