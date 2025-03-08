@@ -42,6 +42,7 @@ export default function PurtyCalc(){
         sum < 0 ? setColor("red") : setColor("black");
         setResult(sum.toString());
       }
+    
     function Subtract() {
         const a = Number(first);
         const b = Number(second);
@@ -61,7 +62,7 @@ export default function PurtyCalc(){
     const b = Number(second);
         if (b === 0) {
 
-            setResult(0);
+            // setResult(quotient.toString());
             setColor("red");
             return;
         }
