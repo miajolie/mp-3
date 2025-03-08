@@ -17,7 +17,7 @@ const Edu = styled.div`
     text-decoration: none;
 `;
 
-const TwoColumns = styled.p`
+const TwoColumns = styled.div`
     column-count: 2;     
     column-gap: 20px;   
     font-size: calc(1.25px + 1.25vw);
@@ -51,14 +51,14 @@ const UCITitle = styled.h2`
 const BUTitle = styled.h2`
 
 `;
-const UText = styled.p`
+const UText = styled.div`
 font-size: calc(1px + 1vw);
 
     @media screen and (max-width: 900px){
         font-size: calc(3px + 3vw);
     }
 `;
-const BText = styled.p`
+const BText = styled.div`
 font-size: calc(1px + 1vw);
 
     @media screen and (max-width: 900px){
@@ -89,10 +89,10 @@ export default function Education(){
                     <UCIImg src= {"/UCI.png"} alt="UCI Mascot" />
                 </UCIPic>
                 <UText>
-                    <p>
+                    
                         <UCITitle>University of California, Irvine</UCITitle>
                         <strong>B.S in Biology<br></br> 2021-2022 </strong>
-                    </p>
+                    
                 </UText>
             </Edu>
             <Edu>
@@ -100,17 +100,17 @@ export default function Education(){
                     <BUImg src= {"/BU.png"} alt="BU Mascot" />
                 </BUPic>
                 <BText>
-                    <p>
+                    
                         <BUTitle>Boston University</BUTitle>
                         <strong>B.A in Computer Science / Minor in Advertising <br></br>2022-Current </strong>
-                    </p>
+                    
                 </BText>
             </Edu>
             <br></br>
             <Courses> 
                 <CourseTitle><u>Courses:</u></CourseTitle>
                     <TwoColumns>
-                        <p>
+                        
                     Data Structures<br></br>
                     Comuter Systems<br></br>
                     Combinatronic Structures<br></br>
@@ -123,7 +123,7 @@ export default function Education(){
                     Business Experiments<br></br>
                     Advertisement<br></br>
                     AdLab<br></br>
-                        </p>
+                        
                     </TwoColumns>
 
             </Courses>
