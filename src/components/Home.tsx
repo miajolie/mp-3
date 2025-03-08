@@ -50,7 +50,7 @@ const ProfileImg = styled.img`
 `;
 
 
-const WelcomeMessage = styled.p`
+const WelcomeMessage = styled.div`
     font-size: calc(1px + 1.5vw);
     margin: 1 1vw;
     line-height: 1.5;
