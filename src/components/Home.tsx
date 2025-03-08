@@ -98,7 +98,7 @@ export default function Home() {
                 <ProfileImg src= {"/ProfilePic.jpeg"} alt="Mia Jolie Batista" />
             </MainImage>
                 <IntroSection>
-                    <p>
+                    
                     My name is Mia Jolie Batista, and I am a driven and
                     passionate college student working towards a B.A. in Computer Science
                     with a minor in Advertisement at Boston University.  I am looking for 
@@ -106,16 +106,16 @@ export default function Home() {
                     background and undergo hands-on experience to further my work experience.
                     I firmly believe my creativity, willingness to learn, attention to detail, 
                     leadership, and collaboration skills would be an asset to any organization.
-                    </p>
+                    
                 </IntroSection>
                 
         </Main>
         <WelcomeMessage>
-                <p>
+                
                 Welcome to my Resume Website! Looking through, you will find some
                 information on my <strong>Educational</strong> background as well as 
                 any <strong>Work Experience</strong>; and maybe even some of my art!
-                </p>
+                
             </WelcomeMessage>
     </>
   );
