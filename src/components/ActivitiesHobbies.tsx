@@ -56,9 +56,23 @@ const Climbing = styled.img`
 
 const Photography = styled.div`
 `;
+
+const MainTitle = styled.h2`
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: #ff8c94;
+
+    @media screen and (max-width: 900px) {
+        text-align: center;
+        color: #ff8c94;
+    }   
+`;
+
 export default function ActivitiesHobbies(){
     return (
         <>
+        <MainTitle>Activities & Hobbies</MainTitle>
             <HobText>
                 <Title>Women's Club Soccer Team | Boston Univeristy / University of California, Irvine </Title>
                 <SubTitle>Aug, 2021 - Present</SubTitle>

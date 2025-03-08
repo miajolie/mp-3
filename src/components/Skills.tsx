@@ -64,11 +64,22 @@ const SkillCategories = styled.div`
         }
 
 `;
+const Title = styled.h2`
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: #ff8c94;
 
+    @media screen and (max-width: 900px) {
+        text-align: center;
+        color: #ff8c94;
+    }   
+`;
 
 export default function Skills(){
     return (
         <MainSkills>
+            <Title>Skills</Title>
             <Peter>
                 <PeterImg src = {"/Peter.gif"} alt = "Peter Dancing"/>
             </Peter>

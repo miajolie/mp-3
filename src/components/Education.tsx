@@ -67,9 +67,23 @@ font-size: calc(1px + 1vw);
 `;
 const CourseTitle = styled.h3`
 `;
+
+const Title = styled.h2`
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: #ff8c94;
+
+    @media screen and (max-width: 900px) {
+        text-align: center;
+        color: #ff8c94;
+    }   
+`;
 export default function Education(){
     return(
+        
         <MainEducation>
+            <Title>Education</Title>
             <Edu>
                 <UCIPic>
                     <UCIImg src= {"/UCI.png"} alt="UCI Mascot" />
